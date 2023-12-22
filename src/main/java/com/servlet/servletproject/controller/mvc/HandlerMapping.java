@@ -1,4 +1,7 @@
-package com.servlet.servletproject.controller;
+package com.servlet.servletproject.controller.mvc;
+
+import com.servlet.servletproject.controller.member.InsertMemberController;
+import com.servlet.servletproject.controller.member.InsertMemberViewController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +17,8 @@ public class HandlerMapping
     public HandlerMapping()
     {
         mappings = new HashMap<String, Controller>();
+        mappings.put("/insertMemberView.do", new InsertMemberViewController());
+        mappings.put("/insertMember.do", new InsertMemberController());
     }
 
     public Controller getController(String path)

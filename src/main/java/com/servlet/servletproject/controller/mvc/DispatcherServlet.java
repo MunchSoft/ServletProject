@@ -1,8 +1,9 @@
-package com.servlet.servletproject.controller;
+package com.servlet.servletproject.controller.mvc;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -11,7 +12,7 @@ import java.io.IOException;
  * 유일한 서블릿 클래스로서 모든 클라이언트의 요청을 가장 먼저 처리하는 프런트 컨트롤러다.
  */
 @WebServlet("*.do")
-public class DispatcherServlet
+public class DispatcherServlet extends HttpServlet
 {
     private HandlerMapping handlerMapping;
     private ViewResolver viewResolver;
@@ -37,7 +38,7 @@ public class DispatcherServlet
         String view = null;
         if(!viewName.contains(".do"))
         {
-            if(viewName.equals("index"))
+            if(viewName.equals("main"))
             {
                 view = viewName + ".jsp";
             }
@@ -50,7 +51,7 @@ public class DispatcherServlet
         {
             view = viewName;
         }
-
+        System.out.println(view);
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);
         dispatcher.forward(request, response);
     }
