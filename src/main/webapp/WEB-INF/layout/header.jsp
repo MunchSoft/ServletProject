@@ -18,19 +18,13 @@
             src="https://kit.fontawesome.com/41456a1590.js"
             crossorigin="anonymous"
     ></script>
-    <script type="module" src="../resource/js/main.js" defer></script>
-    <link rel="stylesheet" href="../resources/css/style.css" />
+    <script type="module" src="/resource/js/main.js" defer></script>
+    <link rel="stylesheet" href="/resource/css/style.css" />
 <body>
 <header id="header">
     <div class="header_container">
         <li>
             <a> 오늘 밤 9시까지 주문하면 오/늘/출/발</a>
-        </li>
-        <li>
-            <a> 뭉크에서 사이즈 고민 하지마세요! 사이즈 무료 교환</a>
-        </li>
-        <li>
-            <a> 행복한쇼핑 뭉크에서 경험하세요.</a>
         </li>
     </div>
     <div class="header_content">
@@ -44,21 +38,30 @@
                         <input type="text" name="keyword" class="header_search_input" />
                         <input
                                 type="image"
-                                src="/images/search.png"
+                                id="main_img1"
+                                src="/resource/images/search_w.png"
                                 onclick="document.querySelector('#header_search').submit();"
                         />
                     </form>
                 </li>
                 <li>
-                    <a href="#"><img src="/images/mypage.png" alt="" /></a>
+                    <a href="#">
+                        <img id="main_img2" src="/resource/images/mypage_w.png" alt="" />
+                    </a>
+                </li>
+                <li class="menu_img">
+                    <a href="#">
+                        <img id="main_img3" src="/resource/images/cart_w.png" alt="" />
+                    </a>
+                </li>
+                <li class="menu_img">
+                    <a href="#">
+                        <img id="main_img4" src="/resource/images/like_w.png" alt="" />
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="/images/cart.png" alt="" /></a>
+                    <a href="#" class="login_text">로그인</a>
                 </li>
-                <li>
-                    <a href="#"><img src="/images/like.png" alt="" /></a>
-                </li>
-                <li><a href="#" class="login_text">로그인</a></li>
             </ul>
         </nav>
     </div>

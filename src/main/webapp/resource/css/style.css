@@ -228,14 +228,13 @@ h2.subtitle {
     opacity: 1;
     overflow: hidden;
     padding: 10px;
-    color: white;
     background-color: #9e7470;
     text-align: center;
     font-size: 13px;
     cursor: pointer;
 }
 .header_container * {
-    color: white;
+    color: #ffffff;
     font-size: 13px;
     background-color: transparent;
 }
@@ -246,7 +245,7 @@ h2.subtitle {
 .header_logo a {
     font-size: 20px;
     letter-spacing: 5px;
-    color: #5a514b;
+    color: #ffffff;
 }
 .header_content {
     width: 100%;
@@ -267,18 +266,19 @@ h2.subtitle {
     z-index: 1;
 }
 .header_nav_menu > li > a {
-    color: #877b73;
     font-size: 12px;
 }
+
 .header_nav_menu > li > a.login_text {
     line-height: 23px;
+    color: #ffffff;
 }
 .header_nav_menu > li img {
     vertical-align: -webkit-baseline-middle;
 }
 .header_search_input {
     border: 0;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ffffff;
     background-color: transparent;
     width: 79px;
     height: 24px;
