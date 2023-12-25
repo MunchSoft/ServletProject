@@ -1,5 +1,6 @@
 package com.servlet.servletproject.controller.mvc;
 
+import com.servlet.servletproject.controller.main.MainPageController;
 import com.servlet.servletproject.controller.member.InsertMemberController;
 import com.servlet.servletproject.controller.member.InsertMemberViewController;
 
@@ -17,6 +18,7 @@ public class HandlerMapping
     public HandlerMapping()
     {
         mappings = new HashMap<String, Controller>();
+        mappings.put("/mainPage.do", new MainPageController());
         mappings.put("/insertMemberView.do", new InsertMemberViewController());
         mappings.put("/insertMember.do", new InsertMemberController());
     }
