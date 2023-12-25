@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="layout/header.jsp"%>
 <!--Main-->
-<main>
+<!--Main-->
+<main id="main">
     <section class="visual">
         <button class="right visu_arrow">right</button>
         <button class="left visu_arrow">left</button>
@@ -25,74 +26,41 @@
         <section class="itemWrap">
             <div class="item">
                 <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
+                    <a href="">
+                        <img src="/resource/images/img1.gif" alt="" />
+                    </a>
                 </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
-                </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
-                </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
-                </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
-                </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
-                </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
-                </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="imgBox">
-                    <img src="/resource/images/img1.gif" alt="" />
-                </div>
-                <div class="textBox">
-                    <p class="textBox__name">코트입니다.</p>
-                    <p class="textBox__price">26,000</p>
+                <div class="info">
+                    <div class="price">
+                        <div>
+                            <div class="price_box">
+                                <span class="sell">50,000원</span>
+                                <div class="price_sell">
+                                    <div class="real_sell">
+                                        29,800원
+                                        <span>40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="name">
+                        <a href=""
+                        >[주문폭주] (기모/겨울데일리룩) 시몬 밴딩롱 플리츠
+                            기모스커트</a
+                        >
+                    </p>
+                    <div class="point">뭉크</div>
+                    <p class="item_bar"></p>
+                    <div class="wish_box">
+                        <div class="count">
+                            <span class="review">( 리뷰 1 )</span>
+                        </div>
+                        <div class="wishcart">
+                            <span class="wish"></span>
+                            <div class="cart"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
